@@ -61,7 +61,8 @@ $cnf = array(
     <form action="configure.php?action=save" method="POST">
     		<h2>Ziel-Ordner</h2>
         <label for="folder_dst">Ziel-Ordner</label>
-        <input name="folder_dst" id="folder_dst" type="text" value="" placeholder="z.B.: /var/www/vhosts/www1.test/dev" />
+        <input name="folder_dst" id="folder_dst" type="text" value="" placeholder="z.B.: /var/www/vhosts/www1.test/dev" /><br />
+        Document-Root: <?php echo $_SERVER['DOCUMENT_ROOT']; ?><br />
         
         <h2>Quell-Datenbank</h2>
         <label for="db_src_host">Hostname</label>
